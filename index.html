@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>10-Sapphire Website</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-navbar shadow-sm mb-4">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#">10-Sapphire</a>
+            
+            <input class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active fw-bold" href="index.html">Classmates</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white opacity-75" href="attendance.html">Attendance Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white opacity-75" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Grade 10 Classmates System</h2>
+            <p>Add and view your classmates easily</p>
+        </div>
+
+        <div class="card main-card p-4 mb-4">
+            <form id="classmateForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name1" placeholder="Enter classmate's name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="section1" placeholder="Enter classmate's section">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="subject1" placeholder="Enter classmate's favorite subject">
+                </div>
+                
+                <div class="row g-2">
+                    <div class="col-6">
+                        <input type="button" class="btn btn-submit w-100 py-2 fw-bold" py-click="create_classmate" value="Add Classmate">
+                    </div>
+                    <div class="col-6">
+                        <input type="button" class="btn btn-submit w-100 py-2 fw-bold" py-click="display_all" value="Show List">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="card main-card p-4">
+            <h5 class="fw-bold mb-3">Classmate List</h5>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center fw-bold">Euan Martinez & Kelsey Medina | 10-Sapphire</footer>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

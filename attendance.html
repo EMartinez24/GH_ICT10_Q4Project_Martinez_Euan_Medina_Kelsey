@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    <link rel="stylesheet" href="css/attendance.css">
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+    <title>10-Sapphire Website</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-navbar shadow-sm mb-4">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#">10-Sapphire</a>
+
+            <input class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white opacity-75" href="index.html">Classmates</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white active fw-bold" href="attendance.html">Attendance Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white opacity-75" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4 mt-4">
+        
+        <div class="tracker-card">
+            <h2>Attendance Tracker</h2>
+            <div class="mb-2">
+                <label for="dayOfTheWeek">Select Day</label>
+                <select id="dayOfTheWeek" class="form-select">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label for="absences">Absences</label>
+                <input type="number" id="absences" class="form-control" placeholder="Enter number...">
+            </div>
+            <input type="button" py-click="displaying" class="btn btn-submit w-100 py-2 fw-bold" value="Submit">
+            <div class="status-bar"></div>
+        </div>
+
+        <div class="chart-container">
+            <div id="output"></div>
+        </div>
+    </div>
+
+        <footer class="text-white text-center fw-bold">Euan Martinez & Kelsey Medina | 10-Sapphire</footer>
+
+    <py-script src="attendance.py"></py-script>
+</body>
+</html>
