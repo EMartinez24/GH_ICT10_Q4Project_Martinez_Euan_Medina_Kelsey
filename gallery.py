@@ -9,7 +9,6 @@ Gallery.innerHTML = """
         <img src="images/IMG_2784.jpg" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title text-center fw-bold mb-1">Mini Mart</h5>
-            <p class="card-text text-center small">We got to sell!</p>
         </div>
     </div>
 </div>
@@ -19,7 +18,6 @@ Gallery.innerHTML = """
         <img src="images/DSCF0446.jpg" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title text-center fw-bold mb-1">Intramurals</h5>
-            <p class="card-text text-center small">Playing any types of sports!</p>
         </div>
     </div>
 </div>
@@ -29,7 +27,6 @@ Gallery.innerHTML = """
         <img src="images/675013828_3896165863851123_2378233852156665513_n.jpg" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title text-center fw-bold mb-1">Christmas Party</h5>
-            <p class="card-text text-center small">We played a lot of games!</p>
         </div>
     </div>
 </div>
@@ -39,7 +36,6 @@ Gallery.innerHTML = """
         <img src="images/CAT Graduation.jpeg" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title text-center fw-bold mb-1">CAT Graduation</h5>
-            <p class="card-text text-center small">Graduated as officers!</p>
         </div>
     </div>
 </div>
