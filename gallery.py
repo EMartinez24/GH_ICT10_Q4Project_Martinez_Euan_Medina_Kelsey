@@ -6,7 +6,7 @@ Gallery = document.getElementById("gallery-container")
 Gallery.innerHTML = """
 <div class="col-md-3 col-sm-6">
     <div class="card h-100 border-0 shadow-sm">
-        <img src="images/IMG_2784.jpg" class="card-img-top">
+        <img src="images/IMG_2784.JPG" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title text-center fw-bold mb-1">Mini Mart</h5>
         </div>
@@ -15,7 +15,7 @@ Gallery.innerHTML = """
 
 <div class="col-md-3 col-sm-6">
     <div class="card h-100 border-0 shadow-sm">
-        <img src="images/DSCF0446.jpg" class="card-img-top">
+        <img src="images/DSCF0446.JPG" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title text-center fw-bold mb-1">Intramurals</h5>
         </div>
